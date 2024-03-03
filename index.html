@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angga</title>
-</head>
-<body>
-    Halaman Index
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julyant Anggara | Portfolio</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-950">
+    <!-- NAVBAR START -->
+    <div class="navbar fixed py-5 bg-slate-900 bg-opacity-70 w-full flex justify-between items-center top-0 z-50">
+      <div class="font-bold ml-5">
+        <a href="" class="text-red-500 text-xl">Julyant <span class="text-white">Anggara</span></a>
+      </div>
+      <div class="flex justify-end mr-5">
+        <a href="" class="font-bold hover:text-red-500">Home</a>
+        <a href="#about" class="font-bold ml-5 hover:text-red-500">About</a>
+        <a href="#project" class="font-bold ml-5 hover:text-red-500">Projects</a>
+      </div>
+    </div>
+
+    <!-- NAVBAR END -->
+
+    <!-- HOME START -->
+    <div id="home" class="hero min-h-screen mb-5 pt-20" style="background-image: url(public/img/bg-overview.jpg)">
+      <div class="hero-overlay bg-opacity-0"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <div class="avatar indicator">
+            <div class="rounded-lg w-[100px] h-[100px]">
+              <img alt="avatar" src="public/img/angga3.jpg" />
+            </div>
+          </div>
+          <h1 class="mb-5 text-5xl font-bold text-white">Hi There, Welcome!</h1>
+          <p class="mb-5">
+            I'm <span class="text-red-500 font-bold hover:text-white">Julyant Anggara</span><br />
+            freelancer that majors in IT at Sumatera Utara University.
+          </p>
+          <a href="#project" class="btn btn-primary">See My Works</a>
+        </div>
+      </div>
+    </div>
+    <!-- HOME END -->
+    <!-- <div class="divider divider-warning">Home</div> -->
+    <!-- OVERVIEW START -->
+    <div class="min-h-screen">
+      <div class="text-center flex justify-center py-3">
+        <p id="about" class="font-serif text-[35px] text-red-500 font-bold">About</p>
+      </div>
+
+      <div class="bg-slate-950 px-20 flex flex-row mt-10">
+        <div class="">
+          <img src="public/img/angga3.jpg" class="w-[600px] h-[800px]rounded-lg shadow-2xl object-cover" />
+        </div>
+        <div class="pl-12">
+          <p class="py-4">
+            Hello! My Name is <span class="font-bold text-purple-500">Julyant Anggara </span>, student majoring in <span class="font-bold text-purple-500">Information Technology</span> at Sumatera Utara University. I'm currently learning in
+            Human Computer Interaction for upgrading my skills in UI and UX. I am capable in web development, basic video editing and designs. <br />
+            Apps that i used for work are: <br />
+            - Laravel PHP Framework (Web Development) <br />
+            - Figma (Web Design) <br />
+            - Filmora (Video Editing)
+          </p>
+          <div class="flex flex-row">
+            <div class="flex flex-col">
+              <div>
+                <p><i class="bx bxs-calendar mr-2 text-red-500"></i><span class="font-bold">Freelance: </span>Available</p>
+              </div>
+              <div>
+                <p><i class="bx bx-world mr-2 text-red-500"></i><span class="font-bold">Spoken Languages: </span>English - Indonesian</p>
+              </div>
+              <div>
+                <p><i class="bx bxs-phone mr-2 text-red-500"></i><span class="font-bold">Phone: </span>0813-xxxx-xxxx</p>
+              </div>
+              <div>
+                <p><i class="bx bx-envelope mr-2 text-red-500"></i><span class="font-bold">Email: </span>july...@gmail.com</p>
+              </div>
+            </div>
+            <!-- part 2 -->
+            <div>
+              <div>
+                <p><i class="ml-12 bx bxl-instagram-alt mr-2 text-red-500"></i><span class="font-bold">Instagram: </span>@julyantanggara</p>
+              </div>
+              <div>
+                <p><i class="ml-12 bx bxs-map mr-2 text-red-500"></i><span class="font-bold">Address: </span>Medan, Indonesia</p>
+              </div>
+              <div>
+                <p><i class="ml-12 bx bxs-heart mr-2 text-red-500"></i><span class="font-bold">Hobbies: </span>Content Creation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- OVERVIEW END -->
+
+    <!-- PROJECT STARTS -->
+    <div class="mb-5">
+      <div class="text-center flex justify-center py-3">
+        <p id="project" class="font-serif text-[35px] text-red-500 font-bold">Projects</p>
+      </div>
+      <!-- ROW 1 -->
+      <div class="flex flex-row items-center justify-evenly mx-20 mt-5">
+        <!-- CARD 1 -->
+        <div class="card w-80 bg-base-100 shadow-xl">
+          <figure class="overflow-hidden aspect-w-16 aspect-h-9"><img class="w-[400px] h-[300px] object-cover" src="public/img/gawai.webp" alt="GawaiShortMovie" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">"Gawai" Short Movie</h2>
+            <p>Rinaldy is a nerd who got bullied and got lent away after being addicted with smartphone...</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Video Editing</div>
+            </div>
+          </div>
+        </div>
+        <!-- CARD 2 -->
+        <div class="card w-80 bg-base-100 shadow-xl">
+          <figure class="overflow-hidden aspect-w-16 aspect-h-9"><img class="w-[400px] h-[300px] object-cover" src="public/img/iconMaghaPuja.png" alt="MaghaPuja" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Magha Puja
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p>Poster Design about One of Buddhists largest events</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Graphic Design</div>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card w-80 bg-base-100 shadow-xl">
+          <figure class="overflow-hidden aspect-w-16 aspect-h-9"><img class="w-[400px] h-[300px] object-cover" src="public/img/vihara.jpeg" alt="vihara" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Vihara Website For Donation</h2>
+            <p>Developing web for vihara donation from Buddhists followers</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Web Development</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PROJECT END -->
+
+    <!-- COMING SOON -->
+    <div class="mb-12">
+      <div class="text-center flex justify-center py-3">
+        <p id="comingsoon" class="font-serif text-[35px] text-red-500 font-bold">Coming Soon</p>
+      </div>
+      <!-- COMING SOON START-->
+      <div class="flex flex-row justify-center">
+        <div class="flex flex-col gap-4 w-80 mx-4">
+          <div class="skeleton h-40 w-full"></div>
+          <div class="skeleton h-4 w-28"></div>
+          <div class="skeleton h-4 w-full"></div>
+          <div class="skeleton h-4 w-full"></div>
+        </div>
+        <div class="flex flex-col gap-4 w-80 mx-4">
+          <div class="skeleton h-40 w-full"></div>
+          <div class="skeleton h-4 w-28"></div>
+          <div class="skeleton h-4 w-full"></div>
+          <div class="skeleton h-4 w-full"></div>
+        </div>
+        <div class="flex flex-col gap-4 w-80 mx-4">
+          <div class="skeleton h-40 w-full"></div>
+          <div class="skeleton h-4 w-28"></div>
+          <div class="skeleton h-4 w-full"></div>
+          <div class="skeleton h-4 w-full"></div>
+        </div>
+      </div>
+    </div>
+    <!-- COMING SOON END-->
+
+    <!-- FOOTER START -->
+    <footer class="footer footer-center text-base-content p-4 bg-base-200">
+      <aside>
+        <p>Copyright © 2024 - Julyant Anggara</p>
+      </aside>
+    </footer>
+    <!-- FOOTER END -->
+  </body>
 </html>
