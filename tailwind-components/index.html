@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://kampusmerdeka.kemdikbud.go.id/favicon.ico" />
+    <title>Program | Merdeka Belajar - Kampus Merdeka</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e87c4faa10.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1fc4ea1c6a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="bg-white min-h-screen text-black">
+    <!-- HEADER START -->
+    <header class="w-full py-4 flex justify-center bg-black">
+      <div class="w-full lg:w-3/4 flex justify-between items-center mx-5 lg:mx-0">
+        <div class="flex items-center h-full gap-4">
+          <img src="https://kampusmerdeka.kemdikbud.go.id/static/media/logo-pendidikan.92aef756.webp" alt="tutwurihandayani" width="40" />
+          <img src="https://kampusmerdeka.kemdikbud.go.id/static/media/logo-white.mobile.a520c1cb.webp" alt="kampus_merdeka" />
+        </div>
+        <!-- DESKTOP NAVBAR-->
+        <div class="hidden lg:flex gap-10 items-center font-Monserrat">
+          <a href="" class="font-bold text-white">Beranda</a>
+          <a href="" class="font-bold text-white">Program</a>
+          <a href="" class="font-bold text-white">Butuh Bantuan?</a>
+          <button type="button" class="bg-white px-4 h-[48px] rounded-full flex text-black gap-4 items-center w-[164,35px]">
+            <i class="fa-solid fa-user text-gray-400 text-sm"></i>
+            <p class="font-bold text-black text-sm">Masuk ke Akun</p>
+          </button>
+        </div>
+        <!-- HAMBURGER FOR MOBILE -->
+        <button class="text-white text-3xl lg:hidden block" onclick="merdeka_hamburger.showModal()">
+          <i class="fa-solid fa-bars"></i>        
+        </button>
+        <dialog id="merdeka_hamburger" class="modal w-full">
+          <div class="w-full  bg-white h-96 absolute top-0">
+            <form method="dialog">
+              <button class="btn btn-sm btn-circle  btn-ghost absolute right-7 top-5 text-xl hover:bg-slate-400">✕</button>
+            </form>
+            <div class="mt-16 mx-4 flex flex-col gap-5 font-Montserrat">
+              <h3 class="font-normal text-xs text-slate-400 ">Program Kampus Merdeka</h3>
+              <button class="flex justify-between  hover:bg-gray-200">
+                <span class="text-black font-bold text-md ">Kampus Mengajar</span>
+                <i class="fa-solid fa-arrow-right pt-1 mr-2"></i>              
+              </button>
+              <button class="flex justify-between hover:bg-gray-200">
+                <span class="text-black font-bold text-md ">Magang MSIB</span>
+                <i class="fa-solid fa-arrow-right pt-1 mr-2"></i>               </button>
+              <button class="flex justify-between hover:bg-gray-200">
+                <span class="text-black font-bold text-md ">Studi Independen Bersertifikat</span>
+                <i class="fa-solid fa-arrow-right pt-1 mr-2"></i>               </button>
+              <button class="flex justify-between hover:bg-gray-200">
+                <span class="text-black font-bold text-md ">Pertukaran mahasiswa Merdeka</span>
+                <i class="fa-solid fa-arrow-right pt-1 mr-2"></i>               </button>
+              <button class="flex justify-between hover:bg-gray-200">
+                <span class="text-black font-bold text-md ">Program dan Kegiatan Lainnya</span>
+                <i class="fa-solid fa-arrow-right pt-1 mr-2"></i>               </button>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </header>
+    <!-- DESKTOP MENU -->
+    <div class="w-full lg:w3/4 mx-auto h-20 lg:w-3/4 hidden lg:flex items-center flex-wrap justify-center font-bold">
+      <!-- KAMPUS MENGAJAR -->
+      <div class="w-1/5 flex items-center justify-between h-20 hover:bg-gray-200 hover:text-blue-500">
+        <span class=""> Kampus Mengajar</span>
+        <i class="fa-solid fa-chevron-down mr-4"></i>
+        </div>
+      <!-- MAGANG MSIB -->
+      <div class="w-1/5 flex items-center justify-between h-20 hover:bg-gray-200 hover:text-blue-500">
+        <span class="ml-4">Magang MSIB</span>
+          <i class="fa-solid fa-chevron-down mr-8"></i>
+      </div>
+      <!-- STUPEN SERTIFIKAT -->
+      <div class="w-1/5 flex items-center justify-between h-20 hover:bg-gray-200 hover:text-blue-500">
+        <span class="ml-4">Studi Independen Bersertifikat</span>
+          <i class="fa-solid fa-chevron-down mr-4"></i>
+      </div>
+      <!-- PMM -->
+      <div class="w-1/5 flex items-center justify-between h-20 hover:bg-gray-200 hover:text-blue-500">
+        <span class="ml-2">Pertukaran Mahasiswa Merdeka</span>
+          <i class="fa-solid fa-chevron-down mr-2"></i>
+      </div>
+      <div class="w-1/5 flex items-center justify-between h-20 hover:bg-gray-200 hover:text-blue-500">
+        <span class="ml-4">Program dan Kegiatan Lainnya</span>
+      </div>
+    </div>
+    <!-- HEADER END -->
+    <!-- MAIN CONTENT START-->
+    <div class="w-full lg:w-3/4 mx-auto ">
+      <!-- TITLE -->
+      <h1 class="mt-6 lg:mt-16 mx-5 lg:mx-0 flex justify-start text-2xl lg:text-4xl font-bold font-Montserrat text-black">Program Kampus Merdeka</h1>
+      <!-- PROGRAM SECTION START -->
+      <div class="mt-4 lg:mt-8 lg:mx-0 flex flex-wrap justify-between gap-4 w-full font-Montserrat">
+        <!-- KAMPUS MENGAJAR -->
+        <div class="w-full mx-5 lg:mx-0 card card-compact flex flex-col justify-between lg:w-[320px] shadow-[0_0_10px_0_rgba(0,0,0,0.1)]">
+          <figure class="pt-6"><img src="https://kampusmerdeka.kemdikbud.go.id/static/media/kampus-mengajar-logo.4cb4b8b5.webp" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title font-bold">Kampus Mengajar</h2>
+            <p class="font-sans">Bantu peningkatan kualitas pendidikan dasar dengan terlibat langsung pada proses pengajaran di sekolah-sekolah yang berlokasi di seluruh daerah di Indonesia.</p>
+            <div class="flex flex-col">
+              <hr class="mt-5" />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Tentang Program
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <hr />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Syarat dan Ketentuan
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MSIB -->
+        <div class="w-full mx-5 lg:mx-0 card card-compact flex flex-col lg:w-[320px] shadow-[0_0_10px_0_rgba(0,0,0,0.1)]">
+          <figure class="pt-6"><img src="https://kampusmerdeka.kemdikbud.go.id/static/media/msib-logo.8402a51e.webp" alt="msib" /></figure>
+          <div class="card-body">
+            <h2 class="card-title font-bold">Magang MSIB</h2>
+            <p class="font-sans">
+              Dapatkan pengalaman dunia kerja secara langsung sebagai persiapan kariermu..
+            </p>
+            <a href="" class="mt-2 border border-black rounded-2xl py-3 font-bold text-center">Cari Posisi Magang</a>
+            <div class="flex flex-col">
+              <hr class="mt-3" />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Tentang Program
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <hr />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Syarat dan Ketentuan
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- STUDI INDEPENDEN -->
+        <div class="w-full mx-5 lg:mx-0 card card-compact flex flex-col lg:w-[320px] shadow-[0_0_10px_0_rgba(0,0,0,0.1)]">
+          <figure class="pt-6"><img src="https://kampusmerdeka.kemdikbud.go.id/static/media/msib-logo.8402a51e.webp" alt="stupen" /></figure>
+          <div class="card-body">
+            <h2 class="card-title font-bold">Studi Independen</h2>
+            <p class="font-sans">
+              Jalankan proyek penelitian dengan studi kasus nyata dari para pelaku industri ternama.
+            </p>
+            <a href="" class="border border-black rounded-2xl py-3 font-bold text-center">Cari Kelas Studi Independen</a>
+            <div class="flex flex-col">
+              <hr class="mt-3" />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Tentang Program
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <hr />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Syarat dan Ketentuan
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PERTUKARAN MAHASISWA MERDEKA -->
+        <div class="w-full mx-5 lg:mx-0 justify-start card card-compact flex flex-col lg:w-[320px] shadow-[0_0_10px_0_rgba(0,0,0,0.1)]">
+          <figure class="pt-6"><img src="https://kampusmerdeka.kemdikbud.go.id/static/media/pmm-logo.02f2aceb.webp" alt="PMM" /></figure>
+          <div class="card-body">
+            <h2 class="card-title font-bold">Pertukaran Mahasiswa Merdeka</h2>
+            <p class="font-sans">Program pertukaran mahasiswa dalam negeri  yang memberikan 
+              pengalaman langsung untuk lebih memaknai keberagaman budaya nusantara.</p>
+            <div class="flex flex-col">
+              <hr class="mt-5" />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Tentang Program
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <hr />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Syarat dan Ketentuan
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- WIRAUSAHA MERDEKA -->
+        <div class="w-full mx-5 lg:mx-0 justify-start card card-compact flex flex-col lg:w-[320px] shadow-[0_0_10px_0_rgba(0,0,0,0.1)]">
+          <figure class="pt-6"><img src="	https://kampusmerdeka.kemdikbud.go.id/static/media/wmk-logo.8e10d0f7.webp" alt="wirausahaMerdeka" /></figure>
+          <div class="card-body">
+            <h2 class="card-title font-bold">Wirausaha Merdeka</h2>
+            <p class="font-sans"> Ikuti program unggulan dari berbagai Perguruan Tinggi yang
+              bertujuan untuk meningkatkan kemampuan wirausaha</p>
+            <div class="flex flex-col">
+
+              <hr />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Tentang Program
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- IISMAA -->
+        <div class="w-full mx-5 lg:mx-0 justify-start card card-compact flex flex-col lg:w-[320px] shadow-[0_0_10px_0_rgba(0,0,0,0.1)]">
+          <figure class="pt-6"><img src="https://kampusmerdeka.kemdikbud.go.id/static/media/iisma-logo.0971cb16.webp" alt="IISMAA" /></figure>
+          <div class="card-body">
+            <h2 class="card-title font-bold">Indonesian International Student Mobility Awards</h2>
+            <p class="font-sans">Bantu peningkatan kualitas pendidikan dasar dengan terlibat langsung pada proses pengajaran di sekolah-sekolah yang berlokasi di seluruh daerah di Indonesia.</p>
+            <div class="flex flex-col">
+              <hr class="mt-5" />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Tentang Program
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <hr />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Syarat dan Ketentuan
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRAKTISI MENGAJAR -->
+        <div class="w-full mx-5 lg:mx-0 justify-start card card-compact flex flex-col lg:w-[320px] shadow-[0_0_10px_0_rgba(0,0,0,0.1)]">
+          <figure class="pt-6"><img src="	https://kampusmerdeka.kemdikbud.go.id/static/media/praktisi-mengajar-logo.f46e6623.webp" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title font-bold">Kampus Mengajar</h2>
+            <p class="font-sans">Ruang kolaborasi antara Praktisi sebagai representasi industri dengan dosen Perguruan 
+              Tinggi dalam bentuk pengajaran mata kuliah agar mahasiswa lebih siap untuk masuk ke dunia kerja.</p>
+            <div class="flex flex-col">
+              <hr />
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Tentang Program
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="my-8 mx-5 lg:mx-0">
+      <!-- MAGANG MANDIRI -->
+      <div class="w-full">
+        <h1 class="mx-5 lg:mx-0 flex justify-start text-2xl text-4xl font-bold font-Montserrat text-black">Kegiatan Lainnya</h1>
+        <!-- PRAKTISI MENGAJAR -->
+        <div class="mx-5 lg:mx-0 mt-4 lg:mt-8 justify-start card card-compact flex flex-col lg:w-[320px] shadow-[0_0_10px_0_rgba(0,0,0,0.1)]">
+          <figure class="pt-6 my-5"><img src="https://kampusmerdeka.kemdikbud.go.id/static/media/logo-mandiri.4e08d727.webp" alt="mandiri" /></figure>
+          <div class="card-body">
+            <h2 class="card-title font-bold">Mandiri</h2>
+            <p class="font-sans">Temukan pengalaman dunia kerja yang dikelola langsung oleh perusahaan
+              tanpa ada batasan kuota dan jadwal yang lebih fleksibel..</p>
+              <a href="" class="mt-2 border border-black rounded-2xl py-3 font-bold text-center">Cari Posisi Magang</a>
+            
+              <div class="flex flex-col">
+              <a class="text-base text-blue-500 font-bold my-4 flex items-center justify-between">
+                Tentang Program
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- PROGRAM SECTION END -->
+    </div>
+    <!-- MAIN  CONTENT END-->
+
+    <!-- MOBILE MENU START -->
+  <ul class="w-full menu menu-horizontal py-1 text-gray-400 rounded-box mt-6 bg-white lg:hidden justify-evenly">
+    <li>
+      <a class="tooltip" data-tip="Home">
+        <i class="fa-solid fa-house"></i>        
+        <span class="block text-xs">Home</span>
+      </a>
+    </li>
+    <li>
+      <a class="tooltip text-orange-600" data-tip="Program">
+        <i class="fa-solid fa-bag-shopping"></i>        
+        <span class="block font-bold text-black text-xs">Program</span>
+      </a>
+    </li>
+    <li>
+      <a class="tooltip" data-tip="FAQ">
+        <i class="fa-regular fa-circle-question"></i>        
+        <span class="block font-bold text-black text-xs">FAQ</span>
+      </a>
+    </li>
+    <li>
+      <a class="tooltip" data-tip="Login">
+        <i class="fa-solid fa-user"></i>        
+        <span class="block font-bold text-black text-xs">Login</span>
+      </a>
+    </li>
+  </ul>
+  <!-- MOBILE MENU END -->
+
+  <!-- FOOTER START -->
+  <div class="mt-8 bg-black hidden lg:block">
+    <footer class="footer pb-32 py-20 px-8 xl:px-[9.2rem] text-white">
+      <aside class="flex w-full">
+        <img src="https://kampusmerdeka.kemdikbud.go.id/static/media/logo-kemendikbud.ae86719b.webp" alt="kemendikbud">
+        <div class="text-lg text-wrap ms-5 w-[30rem]">
+          <p class="font-bold">Direktorat Jenderal Pendidikan Tinggi, Riset, dan
+            Teknologi (Diktiristek)</p>
+          <br><br>
+          <p>marketing@kampusmerdeka.co</p>
+          <br>
+          <p>Jl. Jenderal Sudirman, Senayan, Jakarta 10270</p>
+          <div class="mt-48 text-2xl flex gap-5">
+            <a href="" class="fa-brands fa-twitter"></a>
+            <a href="" class="fa-brands fa-instagram"></a>
+            <a href="" class="fa-brands fa-youtube"></a>
+            <a href="" class="fa-brands fa-facebook"></a>
+            <a href="" class="fa-brands fa-linkedin"></a>
+            <a href="" class="fa-solid fa-globe"></a>
+          </div>
+        </div>
+        <div>
+          <div class="flex">
+            <nav class="flex flex-col gap-3 me-36">
+              <p class="text-lg font-bold mb-5">Navigasi</p>
+              <a class="link link-hover text-lg">Beranda</a>
+              <a class="link link-hover text-lg">Tentang Kami</a>
+              <a class="link link-hover text-lg">Berita</a>
+              <a class="link link-hover text-lg">Pengumuman</a>
+              <a class="link link-hover text-lg">FAQ</a>
+              <a class="link link-hover text-lg">Program</a>
+              <a class="link link-hover text-lg">Daftar</a>
+            </nav>
+            <nav class="flex flex-col gap-3">
+              <p class="text-lg font-bold mb-5">Tautan Eksternal</p>
+              <a class="link link-hover text-lg">Mitra Kampus Merdeka</a>
+            </nav>
+          </div>
+          <p class="mt-14 text-md w-96">Hak Cipta 2022 Kementerian Pendidikan dan Kebudayaan RI
+            Foto oleh ITS, ITERA, and UI</p>
+        </div>
+      </aside>
+    </footer>
+  </div>
+  <!-- FOOTER END -->
+
+    </footer>
+  </body>
+</html>
